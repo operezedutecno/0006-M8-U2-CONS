@@ -1,0 +1,34 @@
+{{> Cabecera}}
+    <h1>{{ titulo }}</h1>
+
+    <form action="/procesar" method="post" enctype="multipart/form-data">
+        <div class="row mt-4">
+            <div class="col-4">
+                <label for="select-marca">Marca</label>
+                <select id="select-marca" class="form-control">
+                    <option value="">Seleccion</option>
+                </select>  
+            </div>
+
+            <div class="col-4">
+                <label for="txt-ram">Marca</label>
+                <input id="txt-ram" type="text" class="form-control">
+            </div>
+
+            <div class="col-4">
+                <label for="txt-almacenamiento">Capacidad Disco</label>
+                <input id="txt-almacenamiento" type="text" class="form-control">
+            </div>
+
+            <div class="col-12 mt-2">
+                <input id="btn-registrar" type="submit" class="btn btn-success">
+            </div>
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <a href="/" class="btn btn-info">Listado</a>
+        </div>
+    </div>
+{{> Pie }}
