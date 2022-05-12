@@ -1,0 +1,6 @@
+- Crear un consulta en la BD que devuelva las computadoras registradas y enviarlas al template para mostrarlas utilizando un helper.
+- Crear un consulta en la BD que devuelva las marcas registradas y enviarlas al template para mostrarlas como opciones del select en el formulario de registro.
+- Crear una ruta post que reciba los datos del formulario y los inserte en la Base de Datos.
+-----Opcionales-----------
+- Crear una ruta delete que permita eliminar computadoras.
+- Crear un input file en el formulario de registro para subir la imagen de la computadora al servidor, y luego mostrarla en el listado.
