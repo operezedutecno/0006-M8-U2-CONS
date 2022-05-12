@@ -6,7 +6,9 @@
             <div class="col-4">
                 <label for="select-marca">Marca</label>
                 <select id="select-marca" class="form-control">
-                    <option value="">Seleccion</option>
+                    {{#each computadorMarca}}  
+                        <option value="{{this.id}}">{{this.id}}</option>
+                    {{/each}}                    
                 </select>  
             </div>
 

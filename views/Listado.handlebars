@@ -6,7 +6,8 @@
             <a href="/registrar" class="btn btn-success">Registrar</a>
         </div>
     </div>
-
+   
+        {{# if computador}}
     <div class="row">
         <div class="col-12">
             <table class="table table-bordered table-striped mt-4">
@@ -17,10 +18,20 @@
                     <th>Capacidad Disco</th>
                     <th>Acciones</th>
                 </thead>
-                <tbody>
-
+                <tbody id="listado">
+                    
+                    {{#each computador}}  
+                        <tr>
+                        {{>tabla id=this.id nombre=this.nombre ram=this.ram almacenamiento=this.almacenamiento}}
+                        </tr>
+                    {{/each}}
+                    
                 </tbody>
             </table>
         </div>
     </div>
+    {{else}}
+        <p>No hay datos disponibles</p>
+    {{/if}}        
+    
 {{> Pie }}
